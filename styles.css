@@ -49,23 +49,34 @@ p {
 /* =========================
    STATS
 ========================= */
-.stats {
+.stat-cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  text-align: center;
-  background: var(--light-gray);
-  padding: 1.5rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 1rem;
 }
 
-.stat span {
+.card {
+  background: #ffffff;
+  border: 2px solid var(--navy-blue);
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+.card span {
   display: block;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: #666;
 }
 
-.stat strong {
-  font-size: 1.2rem;
+.card strong {
+  font-size: 1.4rem;
+  color: var(--navy-blue);
 }
+
 
 /* =========================
    SECTIONS
