@@ -114,23 +114,54 @@ footer {
   margin-top: 20px;
 }
 
-.social-links a {
-  text-decoration: none;
-  padding: 12px 18px;
-  border-radius: 8px;
-  font-weight: 600;
-  text-align: center;
-  min-width: 140px;
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
 }
 
-/* Mobile adjustments */
-@media (max-width: 600px) {
-  .social-links {
-    flex-direction: column;
-    align-items: stretch;
-  }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--navy-blue);
+  color: #ffffff;
+  padding: 14px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  min-width: 180px;
+  justify-content: center;
+}
 
-  .social-links a {
+.btn i {
+  font-size: 1.2rem;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+/* Brand Accent Hover Colors */
+.btn.hudl:hover {
+  background-color: #ff6600;
+}
+
+.btn.youtube:hover {
+  background-color: #ff0000;
+}
+
+.btn.instagram:hover {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+}
+
+.btn.twitter:hover {
+  background-color: #000000;
+}
+@media (max-width: 600px) {
+  .btn {
     width: 100%;
   }
 }
