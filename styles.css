@@ -1,3 +1,7 @@
+:root {
+  --navy-blue: #0a1f44;
+  --navy-blue-dark: #07162f;
+}
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
