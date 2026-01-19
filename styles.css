@@ -162,4 +162,21 @@ footer {
   .social-links a {
     width: 100%;
   }
+   .footer-qr {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.footer-qr img {
+  display: block;
+  margin: 0 auto 8px;
+  max-width: 120px;
+  height: auto;
+}
+
+.footer-qr p {
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+
 }
