@@ -169,10 +169,7 @@ footer {
     width: 100%;
   }
 }
-.social-links a {
-  background-color: red !important;
-  color: white !important;
-}
+
 /* FORCE NAVY BUTTONS — FINAL OVERRIDE */
 .social-links a {
   background-color: #0a1f44 !important;
