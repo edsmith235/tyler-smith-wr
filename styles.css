@@ -173,3 +173,25 @@ footer {
   background-color: red !important;
   color: white !important;
 }
+/* FORCE NAVY BUTTONS — FINAL OVERRIDE */
+.social-links a {
+  background-color: #0a1f44 !important;
+  color: #ffffff !important;
+  padding: 14px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: 200px;
+}
+.social-links a:hover {
+  background-color: #07162f !important;
+  transform: translateY(-2px);
+}
+.hero {
+  background-color: #0a1f44 !important;
+  color: #ffffff;
+}
