@@ -1,0 +1,19 @@
+{
+  "name": "Tyler Smith",
+  "position": "Wide Receiver",
+  "gradYear": "2029",
+  "school": "Smithson Valley Middle School",
+  
+  "height": "5'9\"",
+  "weight": "154 lbs",
+  "forty": "4.7",
+  "gpa": "3.5",
+
+  "hudl": "https://www.hudl.com/",
+  "youtube": "https://youtube.com/",
+  "instagram": "https://instagram.com/",
+
+  "email": "edsmith235@gmail.com",
+
+  "photo": "tyler-profile.jpg"
+}
