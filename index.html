@@ -20,11 +20,11 @@
     <div class="hero-content">
      <div class="profile-header">
 
-<img src="IMG_20260223_201745.jpg" alt="Tyler Smith" class="profile-pic">
+<img id="photo" class="profile-pic">
 
-<h1>Tyler Smith</h1>
+<h1 id="name"></h1>
 
-<h2>Wide Receiver | Class of 2030</h2>
+<h2 id="position"></h2>
 
 <p class="return-link">
 edsmith235.github.io/tyler-smith-wr
@@ -36,22 +36,22 @@ edsmith235.github.io/tyler-smith-wr
   </header>
 
   <!-- QUICK STATS -->
-  <section class="stat-cards">
+<section class="stat-cards">
   <div class="card">
     <span>Height</span>
-    <strong>5'9"</strong>
+    <strong id="height"></strong>
   </div>
   <div class="card">
     <span>Weight</span>
-    <strong>156 lbs</strong>
+    <strong id="weight"></strong>
   </div>
   <div class="card">
     <span>40-Yard</span>
-    <strong>4.90</strong>
+    <strong id="forty"></strong>
   </div>
   <div class="card">
     <span>GPA</span>
-    <strong>3.8</strong>
+    <strong id="gpa"></strong>
   </div>
 </section>
 
@@ -89,11 +89,11 @@ edsmith235.github.io/tyler-smith-wr
   <h2>Recruiting Links</h2>
 
   <div class="links">
- <div class="social-links">
-  <a href="https://www.hudl.com/profile/22858891/Tyler-Smith/highlights" target="_blank">Hudl Highlights</a>
-  <a href="https://www.youtube.com/@tychi275" target="_blank">YouTube Channel</a>
-  <a href="https://www.instagram.com/jamaican_.t?igsh=MXFrNjd0NGUzNGNqYg==" target="_blank">Instagram</a>
-  <a href="https://x.com/1Tychi" target="_blank">X (Twitter)</a>
+<div class="social-links">
+  <a id="hudl" target="_blank">Hudl Highlights</a>
+  <a id="youtube" target="_blank">YouTube Channel</a>
+  <a id="instagram" target="_blank">Instagram</a>
+  <a id="twitter" target="_blank">X (Twitter)</a>
 </div>
 
 
@@ -139,6 +139,31 @@ edsmith235.github.io/tyler-smith-wr
   </div>
 </footer>
   </footer>
+<script>
 
+fetch('config.json')
+.then(response => response.json())
+.then(data => {
+
+document.getElementById("name").textContent = data.name;
+
+document.getElementById("position").textContent =
+data.position + " | Class of " + data.gradYear;
+
+document.getElementById("photo").src = data.photo;
+
+document.getElementById("height").textContent = data.height;
+document.getElementById("weight").textContent = data.weight;
+document.getElementById("forty").textContent = data.forty;
+document.getElementById("gpa").textContent = data.gpa;
+
+document.getElementById("hudl").href = data.hudl;
+document.getElementById("youtube").href = data.youtube;
+document.getElementById("instagram").href = data.instagram;
+document.getElementById("twitter").href = data.twitter;
+
+});
+
+</script>
 </body>
 </html>
