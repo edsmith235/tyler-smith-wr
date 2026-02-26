@@ -7,10 +7,14 @@
   --light-gray: #f5f5f5;
   --text-dark: #111;
 }
-.logo {
-width:160px;
-display:block;
-margin:0 auto 15px auto;
+.corner-logo {
+
+position:absolute;
+top:15px;
+left:15px;
+
+width:90px;
+
 }
 /* =========================
    BASE STYLES
