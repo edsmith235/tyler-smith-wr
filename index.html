@@ -1,196 +1,577 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tyler Smith | Wide Receiver</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Tyler Smith – Wide Receiver recruiting profile. Highlights, stats, academics, and coach contact." />
+  <title>Tyler Smith | MySmithFile</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta
+    name="description"
+    content="Tyler Smith wide receiver recruiting profile featuring highlights, measurables, academics and coach information."
+  >
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles.css?v=4">
+  <!-- Shared MySmithFile stylesheet -->
+  <link rel="stylesheet" href="../styles.css?v=10">
 </head>
+
+
 <body>
 
-  <!-- HERO -->
-  <header class="hero">
-    <img src="smithfile-logo.png" class="corner-logo">
-    <div class="hero-content">
-     <div class="profile-header">
+<!-- ========================================
+     ATHLETE HEADER
+========================================= -->
 
-<img id="photo" class="profile-pic">
+<header class="hero">
 
-<h1 id="name"></h1>
+  <!-- Clicking the SmithFile logo returns to the main website -->
+  <a href="../" aria-label="Return to MySmithFile home">
+    <img
+      src="../smithfile-logo.png"
+      alt="MySmithFile"
+      class="corner-logo"
+    >
+  </a>
 
-<h2 id="position"></h2>
+  <div class="profile-header">
 
-<p class="return-link">
-edsmith235.github.io/tyler-smith-wr
-</p>
+    <img
+      id="photo"
+      src=""
+      alt="Athlete profile photo"
+      class="profile-pic"
+    >
 
-</div>
-      <p class="location">Smithson Valley Middle School • Spring Branch, Texas</p>
-    </div>
-  </header>
-  
-<section class="section gray">
+    <h1 id="athleteName"></h1>
 
-<h3>Save This Profile</h3>
+    <h2 id="athletePosition"></h2>
 
-<p>
-Bookmark this page or save the link for future reference.
-</p>
+    <p id="schoolLocation" class="location"></p>
 
-<p>
+  </div>
 
-<a href="https://edsmith235.github.io/tyler-smith-wr">
+</header>
 
-edsmith235.github.io/tyler-smith-wr
 
-</a>
+<!-- ========================================
+     SAVE PROFILE
+========================================= -->
 
-</p>
+<section class="section gray save-profile">
+
+  <h2>Save This Profile</h2>
+
+  <p>
+    Bookmark this page or copy the link to return to this recruiting profile anytime.
+  </p>
+
+  <button
+    type="button"
+    class="profile-save-button"
+    id="copyProfileButton"
+  >
+    Copy Profile Link
+  </button>
+
+  <p id="copyStatus" class="copy-status"></p>
 
 </section>
-  
-  <!-- QUICK STATS -->
+
+
+<!-- ========================================
+     QUICK MEASURABLES
+========================================= -->
+
 <section class="stat-cards">
+
   <div class="card">
     <span>Height</span>
     <strong id="height"></strong>
   </div>
+
   <div class="card">
     <span>Weight</span>
     <strong id="weight"></strong>
   </div>
+
   <div class="card">
     <span>40-Yard</span>
     <strong id="forty"></strong>
   </div>
+
   <div class="card">
     <span>GPA</span>
     <strong id="gpa"></strong>
   </div>
+
 </section>
 
-  <!-- HIGHLIGHT FILM -->
-  <section class="section">
-    <h2>Highlight Film</h2>
-   <div class="video-container">
-  <iframe 
-      width="560" 
-      height="315" 
-      src="https://www.youtube.com/embed/UjrDJgOWp6Q" 
-      title="Tyler Smith Highlights" 
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+
+<!-- ========================================
+     HIGHLIGHT FILM
+========================================= -->
+
+<section class="section">
+
+  <h2>Highlight Film</h2>
+
+  <div class="video-container">
+
+    <iframe
+      id="highlightVideo"
+      src=""
+      title="Athlete Highlight Film"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen>
-  </iframe>
-</div>
-
-
-    </div>
-  </section>
-
-  <!-- FOOTBALL PROFILE -->
-  <section class="section navy-blue">
-    <h2>Football Profile</h2>
-    <p>
-      Tyler Smith is a versatile wide receiver with strong hands, precise route
-      running, and the ability to create separation. He is effective both outside
-      and in the slot and contributes as a reliable target in critical situations.
-    </p>
-  </section>
-
-  <!-- SOCIAL MEDIA HUB -->
-  <section class="section">
-  <h2>Recruiting Links</h2>
-
-  <div class="links">
-<div class="social-links">
-  <a id="hudl" target="_blank">Hudl Highlights</a>
-  <a id="youtube" target="_blank">YouTube Channel</a>
-  <a id="instagram" target="_blank">Instagram</a>
-  <a id="twitter" target="_blank">X (Twitter)</a>
-</div>
-
+    </iframe>
 
   </div>
+
 </section>
 
 
+<!-- ========================================
+     FOOTBALL PROFILE
+========================================= -->
+
+<section class="section gray">
+
+  <h2>Football Profile</h2>
+
+  <p id="footballProfile"></p>
+
+</section>
 
 
-  <!-- ACADEMICS -->
-  <section class="section gray">
+<!-- ========================================
+     RECRUITING LINKS
+========================================= -->
+
+<section class="section">
+
+  <h2>Recruiting Links</h2>
+
+  <div class="social-links">
+
+    <a
+      id="hudlLink"
+      href="#"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Hudl Highlights
+    </a>
+
+    <a
+      id="youtubeLink"
+      href="#"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      YouTube Channel
+    </a>
+
+    <a
+      id="instagramLink"
+      href="#"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Instagram
+    </a>
+
+    <a
+      id="twitterLink"
+      href="#"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      X / Twitter
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================
+     ACADEMICS
+========================================= -->
+
+<section class="section gray">
+
   <h2>Academics</h2>
-  <ul>
-    <li>GPA: 3.8</li>
-    <li>Intended Major: Mechanical Engineering</li>
-    <li>Accolades:</li>
-  </ul>
 
-  <p>National Junior Honors Society</p>
-  <p>U.S. Army National Middle School Combine 2024 – Offensive MVP</p>
+  <p>
+    <strong>GPA:</strong>
+    <span id="academicGpa"></span>
+  </p>
+
+  <div id="academicHonors"></div>
+
 </section>
 
-  <!-- CONTACT -->
-  <section class="section">
-    <h2>Coach Contact</h2>
+
+<!-- ========================================
+     ATHLETIC ACCOLADES
+========================================= -->
+
+<section class="section">
+
+  <h2>Athletic Accolades</h2>
+
+  <ul id="athleticAccolades"></ul>
+
+</section>
+
+
+<!-- ========================================
+     COACH CONTACT
+========================================= -->
+
+<section class="section gray">
+
+  <h2>Coach Contact</h2>
+
+  <p>
+    <strong>Head Coach:</strong>
+    <span id="coachName"></span>
+  </p>
+
+  <p>
+    <strong>School:</strong>
+    <span id="coachSchool"></span>
+  </p>
+
+  <p id="coachEmailRow" style="display:none;">
+    <strong>Email:</strong>
+    <a id="coachEmail" href=""></a>
+  </p>
+
+  <p id="coachPhoneRow" style="display:none;">
+    <strong>Phone:</strong>
+    <a id="coachPhone" href=""></a>
+  </p>
+
+</section>
+
+
+<!-- ========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+  <p>
+    © <span id="footerName"></span> | Recruiting Profile
+  </p>
+
+  <p>
+    <strong>Powered by MySmithFile</strong>
+  </p>
+
+  <p>
+    One Link. Full Profile.
+  </p>
+
+  <div class="footer-qr">
+
+    <img
+      id="qrCode"
+      src=""
+      alt="Recruiting profile QR code"
+    >
+
     <p>
-      <strong>Head Coach:</strong> Coach Doug Ulbricht<br>
-      <strong>Email:</strong> doug.ulbricht@comalisd.org<br>
-      <strong>Phone:</strong> 830-885-1200
+      Scan for highlights, stats &amp; contact
     </p>
-  </section>
 
- <footer>
-
-<p>© Tyler Smith | Recruiting Profile</p>
-
-<p><strong>Powered by SmithFile</strong></p>
-<p>One Link. Full Profile.</p>
-
-<div class="footer-qr">
-
-<img src="Tyler_Smith_Recruiting_QR.png"
-alt="Tyler Smith Recruiting QR Code"
-width="120">
-
-<p>Scan for highlights, stats & contact</p>
-
-</div>
+  </div>
 
 </footer>
-  </footer>
+
+
+<!-- ========================================
+     CONFIG LOADER
+========================================= -->
+
 <script>
 
 fetch('config.json')
-.then(response => response.json())
-.then(data => {
 
-document.getElementById("name").textContent = data.name;
+  .then(response => {
 
-document.getElementById("position").textContent =
-data.position + " | Class of " + data.gradYear;
+    if (!response.ok) {
+      throw new Error('Unable to load athlete configuration.');
+    }
 
-document.getElementById("photo").src = data.photo;
+    return response.json();
 
-document.getElementById("height").textContent = data.height;
-document.getElementById("weight").textContent = data.weight;
-document.getElementById("forty").textContent = data.forty;
-document.getElementById("gpa").textContent = data.gpa;
+  })
 
-document.getElementById("hudl").href = data.hudl;
-document.getElementById("youtube").href = data.youtube;
-document.getElementById("instagram").href = data.instagram;
-document.getElementById("twitter").href = data.twitter;
+  .then(data => {
 
-});
+    /* --------------------------------
+       Page Title
+    -------------------------------- */
+
+    document.title =
+      `${data.name} | ${data.position} | MySmithFile`;
+
+
+    /* --------------------------------
+       Header
+    -------------------------------- */
+
+    document.getElementById('athleteName').textContent =
+      data.name;
+
+    document.getElementById('athletePosition').textContent =
+      `${data.position} | Class of ${data.gradYear}`;
+
+    document.getElementById('schoolLocation').textContent =
+      `${data.school} • ${data.location}`;
+
+    document.getElementById('photo').src =
+      data.photo;
+
+    document.getElementById('photo').alt =
+      `${data.name} recruiting profile photo`;
+
+
+    /* --------------------------------
+       Stats
+    -------------------------------- */
+
+    document.getElementById('height').textContent =
+      data.height;
+
+    document.getElementById('weight').textContent =
+      data.weight;
+
+    document.getElementById('forty').textContent =
+      data.forty;
+
+    document.getElementById('gpa').textContent =
+      data.gpa;
+
+
+    /* --------------------------------
+       Highlight Film
+    -------------------------------- */
+
+    document.getElementById('highlightVideo').src =
+      `https://www.youtube.com/embed/${data.highlightVideoId}`;
+
+
+    /* --------------------------------
+       Football Profile
+    -------------------------------- */
+
+    document.getElementById('footballProfile').textContent =
+      data.footballProfile;
+
+
+    /* --------------------------------
+       Recruiting Links
+    -------------------------------- */
+
+    document.getElementById('hudlLink').href =
+      data.links.hudl;
+
+    document.getElementById('youtubeLink').href =
+      data.links.youtube;
+
+    document.getElementById('instagramLink').href =
+      data.links.instagram;
+
+    document.getElementById('twitterLink').href =
+      data.links.twitter;
+
+
+    /* --------------------------------
+       Academics
+    -------------------------------- */
+
+    document.getElementById('academicGpa').textContent =
+      data.gpa;
+
+    const honorsContainer =
+      document.getElementById('academicHonors');
+
+    if (
+      data.academics &&
+      data.academics.honors &&
+      data.academics.honors.length > 0
+    ) {
+
+      const honorsTitle =
+        document.createElement('h3');
+
+      honorsTitle.textContent =
+        'Academic Honors';
+
+      honorsContainer.appendChild(honorsTitle);
+
+      const honorsList =
+        document.createElement('ul');
+
+      data.academics.honors.forEach(honor => {
+
+        const item =
+          document.createElement('li');
+
+        item.textContent =
+          honor;
+
+        honorsList.appendChild(item);
+
+      });
+
+      honorsContainer.appendChild(honorsList);
+
+    }
+
+
+    /* --------------------------------
+       Athletic Accolades
+    -------------------------------- */
+
+    const accoladesList =
+      document.getElementById('athleticAccolades');
+
+    data.athleticAccolades.forEach(accolade => {
+
+      const item =
+        document.createElement('li');
+
+      item.textContent =
+        accolade;
+
+      accoladesList.appendChild(item);
+
+    });
+
+
+    /* --------------------------------
+       Coach
+    -------------------------------- */
+
+    document.getElementById('coachName').textContent =
+      data.coach.name;
+
+    document.getElementById('coachSchool').textContent =
+      data.coach.school;
+
+
+    /* Only display coach email if provided */
+
+    if (data.coach.email) {
+
+      const emailRow =
+        document.getElementById('coachEmailRow');
+
+      const emailLink =
+        document.getElementById('coachEmail');
+
+      emailRow.style.display =
+        'block';
+
+      emailLink.textContent =
+        data.coach.email;
+
+      emailLink.href =
+        `mailto:${data.coach.email}`;
+
+    }
+
+
+    /* Only display coach phone if provided */
+
+    if (data.coach.phone) {
+
+      const phoneRow =
+        document.getElementById('coachPhoneRow');
+
+      const phoneLink =
+        document.getElementById('coachPhone');
+
+      phoneRow.style.display =
+        'block';
+
+      phoneLink.textContent =
+        data.coach.phone;
+
+      phoneLink.href =
+        `tel:${data.coach.phone}`;
+
+    }
+
+
+    /* --------------------------------
+       QR Code
+    -------------------------------- */
+
+    document.getElementById('qrCode').src =
+      data.qrCode;
+
+
+    /* --------------------------------
+       Footer
+    -------------------------------- */
+
+    document.getElementById('footerName').textContent =
+      data.name;
+
+  })
+
+  .catch(error => {
+
+    console.error(error);
+
+    document.body.insertAdjacentHTML(
+      'afterbegin',
+      '<p style="background:#8b0000;color:white;padding:12px;text-align:center;">Athlete information could not be loaded.</p>'
+    );
+
+  });
+
+
+/* ========================================
+   COPY PROFILE LINK
+========================================= */
+
+document
+  .getElementById('copyProfileButton')
+  .addEventListener('click', async function() {
+
+    const status =
+      document.getElementById('copyStatus');
+
+    try {
+
+      await navigator.clipboard.writeText(
+        window.location.href
+      );
+
+      status.textContent =
+        'Profile link copied.';
+
+    }
+
+    catch {
+
+      status.textContent =
+        'Bookmark this page to return later.';
+
+    }
+
+  });
 
 </script>
+
+
 </body>
 </html>
