@@ -253,3 +253,33 @@ footer {
 font-size:14px;
 color:gray;
 }
+/* =========================
+   TYLER PROFILE MOBILE FIX
+========================= */
+
+@media (max-width: 768px) {
+
+  .profile-pic {
+    width: 110px !important;
+    height: 135px !important;
+    max-width: 110px !important;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .profile-header {
+    padding: 10px;
+  }
+
+  .profile-header h1 {
+    font-size: 1.7rem;
+    margin: 8px 0 4px;
+  }
+
+  .profile-header h2 {
+    font-size: 1rem;
+    margin: 4px 0;
+  }
+}
